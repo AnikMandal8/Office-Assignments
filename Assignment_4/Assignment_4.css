@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(242, 225, 248);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+td,
+th {
+    border: 1px solid #3b3939;
+    padding: 8px;
+}
+
+th {
+    background-color: rgb(165, 236, 229);
+}
+
+table {
+    margin-left: 450px;
+}
+
+.ol_header {
+    color: rgb(12, 165, 12);
+}
+
+.ul_header {
+    color: rgb(222, 46, 37);
+}
