@@ -1,0 +1,13 @@
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    transition: width 3s,height 3s, background-color 3s,transform 3s;
+    transition-timing-function: ease-in-out;
+}
+.box:hover{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    transform: rotate(180deg);
+}
