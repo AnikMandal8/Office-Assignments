@@ -1,0 +1,74 @@
+.item1 {
+    grid-area: header;
+}
+
+.item2 {
+    grid-area: menu;
+}
+
+.item3 {
+    grid-area: main;
+}
+
+.item4 {
+    grid-area: right;
+}
+
+.item5 {
+    grid-area: footer;
+}
+.item6{
+    grid-area: content;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu main main main right right'
+        'menu main main main content content'
+        'footer footer footer footer footer footer ';
+        
+    gap: 10px;
+    background-color: #2196F3;
+}
+.container > div {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    border: solid 5px red;
+  }
+
+
+/* Number grid practice css */
+.num1{grid-area: num1;}
+.num2{grid-area: num2;}
+.num3{grid-area: num3;}
+.num4{grid-area: num4;}
+.num5{grid-area: num5;}
+.num6{grid-area: num6;}
+.num7{grid-area: num7;}
+.num8{grid-area: num8;}
+.num9{grid-area: num9;}
+
+  .number-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-areas: 
+    'num1 num1 num1 num2 num3 num3'
+    'num4 num4 num5 num5 num6 num6'
+    'num7 num7 num8 num8 num9 num9';
+    gap: 10px;
+    background-color: green;
+    border: solid 10px green ;
+    text-align: center;
+  }
+
+  .number-container>div{
+    /* border: solid 3px green; */
+    padding: 20px;
+    background-color: yellow;
+    font-size: 20px;
+
+  }
