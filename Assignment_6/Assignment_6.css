@@ -20,8 +20,11 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-delay: -2s;
+    animation-direction: alternate;
 }
 @keyframes practice{
-    from{background-color: blue;width: 200px;}
-    to{background-color: purple;width:500px}
+    /* from{background-color: blue;width: 200px;}
+    to{background-color: purple;width:500px} */
+    from{border-radius: 0;background-color: blue;margin-left: 0px;}
+    to{border-radius: 100%;background-color: purple;margin-left: 100px;}
 }
