@@ -6,8 +6,22 @@
     transition-timing-function: ease-in-out;
 }
 .box:hover{
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     background-color: green;
     transform: rotate(180deg);
+}
+.animation_box{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation-name: practice;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: -2s;
+}
+@keyframes practice{
+    from{background-color: blue;width: 200px;}
+    to{background-color: purple;width:500px}
 }
