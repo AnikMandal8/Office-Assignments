@@ -1,0 +1,41 @@
+.box1 {
+    background-color: red;
+}
+
+.box2 {
+    background-color: orange;
+}
+
+.box3 {
+    background-color: yellow;
+}
+
+.box4 {
+    background-color: green;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.container>div{
+    height: 300px;
+    width:300px;
+}
+@media screen and (min-width:480px) and (max-width:768px){
+    .container{
+        flex-direction: row-reverse;
+    }
+    body{
+        background-color: lightcyan;
+    }
+}
+
+@media screen and (max-width:480px){
+    .container{
+        flex-direction: column;
+    }
+    body{
+        background-color: rgb(235, 205, 234);
+    }
+}
