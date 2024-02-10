@@ -1,0 +1,30 @@
+
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    background-color: rgb(154, 49, 234);
+    ul{
+        list-style-type: none;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+    li{
+        padding: 15px;
+    }
+    a{
+        text-decoration: none;
+        color: rgb(217, 217, 217);
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    li:hover{
+        background-color:  rgb(122, 7, 211);
+        a{
+            color: white;
+        }
+    
+    }
+}

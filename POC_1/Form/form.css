@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: rgb(154, 49, 234);
+    display: flex;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.page_title{
+    flex:11;
+    text-align: center;
+    padding: 15px;
+    padding-right: 5em;
+
+}
+.back_home{
+    flex: 1;
+    padding: 15px;
+    a{
+        text-decoration: none;
+        color: rgb(217, 217, 217);;
+    }
+    :hover{
+        color: white;
+    }
+}
