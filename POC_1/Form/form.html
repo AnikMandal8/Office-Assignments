@@ -13,21 +13,88 @@
             <a href="../main.html">Back</a>
         </div>
         <div class="page_title">Fill The Application Form</div>
-
     </div>
-    <div>
-        <form action="https://github.com/AnikMandal8/Office-Assignments/tree/main/Assignment_2/Assignment_2.html">
-            <label for="fname">First Name: </label>
-            <input type="text" id="fname" placeholder="firstname" /><br /><br />
-            <label>Last Name: </label>
-            <input type="text" placeholder="lastname" /><br /><br />
-            <label>Address: </label>
-            <input type="text" placeholder="address" /><br /><br />
-            <label>State: </label>
-            <input type="text" placeholder="state" /><br /><br />
-            <label>Write your Bio: </label><br /><br />
-            <textarea name="bio" rows="10" cols="40"></textarea>
-            <br /><br />
+    <div class="form_div">
+        <form action="https://github.com/AnikMandal8/Office-Assignments/tree/main/Assignment_2/Assignment_2.html"
+            style="display: grid;">
+
+            <div class="firstname">
+                <label for="fname">First Name </label><br />
+                <input type="text" id="fname" placeholder="firstname" required />
+            </div>
+
+            <div class="lastname">
+                <label for="lname">Last Name </label><br />
+                <input type="text" id="lname" placeholder="lastname" required />
+            </div>
+
+            <div class="gender">
+                <label for="gender">Gender</label><br />
+                <label for="male">Male</label>
+                <input type="radio" id="male" value="Male" />
+                <label for="female">Female</label>
+                <input type="radio" id="female" value="Female" />
+                <label for="others">Others</label>
+                <input type="radio" id="others" value="Others" />
+            </div>
+
+            <div class="age">
+                <label for="age">Age</label><br />
+                <input type="number" min="18" id="age" />
+            </div>
+
+            <div class="birth_date">
+                <label for="dob">Date of Birth</label><br />
+                <input type="date" id="dob" max="2006-01-01" min="1900-12-31" />
+            </div>
+
+            <div class="address1">
+                <label for="Address1">Address 1</label><br />
+                <input type="text" id="Address1" placeholder="Address line 1" required />
+            </div>
+
+            <div class="address2">
+                <label for="Address2">Address 2</label><br />
+                <input type="text" id="Address2" placeholder="Address line 2" />
+            </div>
+
+            <div class="district">
+                <label for="District">District</label><br />
+                <input type="text" id="District">
+            </div>
+
+            <div class="state">
+                <label for="State">State</label><br />
+                <input id="District" list="state_names">
+                <datalist id="state_names">
+                    <option value="West Bengal" />
+                    <option value="Maharastra" />
+                    <option value="Uttar Pradesh" />
+                    <option value="Andhra Pradesh" />
+                    <option value="Tamilnadu" />
+                    <option value="Karnataka" />
+                    <option value="Tripura" />
+                    <option value="Arunachal Pradesh" />
+                    <option value="Kerala" />
+                    <option value="Uttarakhand" />
+                    <option value="Gujrat" />
+                </datalist>
+            </div>
+
+            <div class="pin">
+                <label for="PIN">PIN</label><br />
+                <input type="text" id="PIN" maxlength="6" pattern="[0-9]" title="Put Proper PIN">
+            </div>
+
+            <div class="bio">
+                <label for="BIO">Write your Bio </label><br/>
+                <textarea name="bio" id="BIO" rows="10" cols="40" maxlength="150" required></textarea>
+            </div>
+
+            <div class="file">
+                <label for="File">Upload Resume</label><br/>
+                <input type="file" id="File" >                
+            </div>
             <input type="submit" value="SUBMIT" />
         </form>
     </div>
