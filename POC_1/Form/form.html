@@ -15,12 +15,16 @@
         <div class="page_title">Fill The Application Form</div>
     </div>
     <div class="form_div">
-        <form action="https://github.com/AnikMandal8/Office-Assignments/tree/main/Assignment_2/Assignment_2.html"
-            style="display: grid;">
+        <form action="https://github.com/AnikMandal8/Office-Assignments/tree/main/Assignment_2/Assignment_2.html">
 
             <div class="firstname">
                 <label for="fname">First Name </label><br />
                 <input type="text" id="fname" placeholder="firstname" required />
+            </div>
+
+            <div class="midname">
+                <label for="mname">Middle Name </label><br />
+                <input type="text" id="mname" placeholder="firstname" />
             </div>
 
             <div class="lastname">
@@ -30,12 +34,14 @@
 
             <div class="gender">
                 <label for="gender">Gender</label><br />
-                <label for="male">Male</label>
-                <input type="radio" id="male" value="Male" />
-                <label for="female">Female</label>
-                <input type="radio" id="female" value="Female" />
-                <label for="others">Others</label>
-                <input type="radio" id="others" value="Others" />
+                <div>
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" value="Male" />
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" value="Female" />
+                    <label for="others">Others</label>
+                    <input type="radio" id="others" value="Others" />
+                </div>
             </div>
 
             <div class="age">
@@ -65,7 +71,7 @@
 
             <div class="state">
                 <label for="State">State</label><br />
-                <input id="District" list="state_names">
+                <input id="State" list="state_names">
                 <datalist id="state_names">
                     <option value="West Bengal" />
                     <option value="Maharastra" />
@@ -87,15 +93,15 @@
             </div>
 
             <div class="bio">
-                <label for="BIO">Write your Bio </label><br/>
+                <label for="BIO">Write your Bio </label><br />
                 <textarea name="bio" id="BIO" rows="10" cols="40" maxlength="150" required></textarea>
             </div>
 
             <div class="file">
-                <label for="File">Upload Resume</label><br/>
-                <input type="file" id="File" >                
+                <label for="File">Upload Resume</label><br />
+                <input type="file" id="File">
             </div>
-            <input type="submit" value="SUBMIT" />
+            <input type="submit" value="SUBMIT" class="sumbit_btn" />
         </form>
     </div>
 </body>

@@ -31,3 +31,70 @@ body{
     margin: 2rem 7rem 0 7rem;
     font-size: 1.2rem;    
 }
+
+
+.firstname{
+    grid-area: fname;
+}
+.midname{
+    grid-area: mname;
+}
+.lastname{
+    grid-area: lname;
+}
+.gender{
+    grid-area: gender;
+    div{
+        font-size: 16px;
+    }
+}
+.age{
+    grid-area: age;
+}
+.birth_date{
+    grid-area: dob;
+}
+.address1{
+    grid-area: add1;
+}
+.address2{
+    grid-area: add2;
+}
+.district{
+    grid-area: dist;
+}
+.state{
+    grid-area: state;
+}
+.pin{
+    grid-area: pin;
+}
+.bio{
+    grid-area: bio;
+}
+.file{
+    grid-area: file;
+}
+.sumbit_btn{
+    grid-area: btn;
+}
+
+form{
+    display: grid;
+    grid-template-areas: 
+    'fname fname mname mname lname lname'
+    'gender gender age age dob dob'
+    'add1 add1 add1 add2 add2 add2'
+    'dist dist state state pin pin'
+    'bio bio bio bio bio bio'
+    'file file file btn btn btn';
+    gap:20px;
+    background-color: antiquewhite;
+}
+#fname,#mname,#lname,#age,#dob,#Address1,#Address2,#District,#State,#PIN{
+    width: 80%;
+    border: none;
+    height: 25px;
+    padding: 5px;
+    margin-top: 5px;
+}
