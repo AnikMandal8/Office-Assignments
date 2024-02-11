@@ -1,0 +1,53 @@
+.animation_main{
+    margin: 15% 10rem 0 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.success_bar{
+    width: 60%;
+    height: 20px;
+    background-color: green;
+    margin-left: 20%;
+    border-radius: 5px;
+    animation-name: successbar;
+    animation-timing-function: ease-out;
+    animation-duration: 3s;
+}
+@keyframes successbar{
+    from{width: 0%;background-color: rgb(200, 255, 0);}
+    to{width: 60%;background-color: green;}
+}
+.message{
+    margin-top: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    animation-name: message;
+    animation-duration: 6s;
+}
+@keyframes message{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0.7;}
+    90%{opacity: 0.9;}
+    100%{opacity: 1;}
+
+}
+
+@media screen and (max-width:480px){
+    .animation_main{
+        margin:40% 0 0 0;
+    }
+    .success_bar{
+        width: 70%;
+        margin-left: 15%;
+    }
+    @keyframes successbar{
+        from{width: 0%;background-color: rgb(200, 255, 0);}
+        to{width: 70%;background-color: green;}
+    }
+}
