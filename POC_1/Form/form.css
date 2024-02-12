@@ -163,14 +163,14 @@ form {
     color: white;
     border-radius: 7px;
     margin-right: 10px;
-    width: 60%;
+    width: 50%;
 }
 
 #File::-webkit-file-upload-button:hover {
     background-color: rgb(38, 135, 46);
 }
 
-#button{
+#button {
     border: none;
     background-color: rgb(39, 179, 50);
     padding: 10px 20px;
@@ -180,8 +180,43 @@ form {
     width: 60%;
     border-radius: 5px;
 }
-#button:hover{
+
+#button:hover {
     font-weight: bold;
-    background-color:rgb(21, 133, 31) ;
-   
+    background-color: rgb(21, 133, 31);
+
+}
+
+@media screen and (max-width:480px) {
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form_div {
+        margin: 20px 20px 20px 25px;
+    }
+
+    #BIO {
+        max-width: 95%;
+    }
+
+    #fname,
+    #mname,
+    #lname,
+    #age,
+    #dob,
+    #Address1,
+    #Address2,
+    #District,
+    #State,
+    #PIN {
+        width: 95%;
+    }
+
+    .sumbit_btn {
+        width: 80%;
+        text-align: center;
+        margin-left: 10%;
+    }
 }
