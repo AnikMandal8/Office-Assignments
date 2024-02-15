@@ -24,16 +24,14 @@ body {
 .back_home {
     flex: 1;
     padding: 15px;
-
-    a {
-        text-decoration: none;
-        color: rgb(217, 217, 217);
-        ;
-    }
-
     :hover {
         color: white;
     }
+}
+.back_home>a{
+        text-decoration: none;
+        color: rgb(217, 217, 217);
+        
 }
 
 .form_div {
@@ -56,14 +54,12 @@ body {
 
 .gender {
     grid-area: gender;
-
-    div {
+}
+.gender>div{
         font-size: 16px;
         margin-top: 5px;
         font-weight: 500;
-    }
 }
-
 .age {
     grid-area: age;
 }
