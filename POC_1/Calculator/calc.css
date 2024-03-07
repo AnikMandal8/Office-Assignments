@@ -1,0 +1,135 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.num1 {
+  grid-area: num1;
+}
+
+.num2 {
+  grid-area: num2;
+}
+
+.num3 {
+  grid-area: num3;
+}
+
+.num4 {
+  grid-area: num4;
+}
+
+.num5 {
+  grid-area: num5;
+}
+
+.num6 {
+  grid-area: num6;
+}
+
+.num7 {
+  grid-area: num7;
+}
+
+.num8 {
+  grid-area: num8;
+}
+
+.num9 {
+  grid-area: num9;
+}
+
+.num0 {
+  grid-area: num0;
+}
+
+.op_plus {
+  grid-area: plus;
+}
+
+.op_min {
+  grid-area: minus;
+}
+
+.op_mul {
+  grid-area: mul;
+}
+
+.op_div {
+  grid-area: div;
+}
+
+.calc {
+  grid-area: cal;
+}
+.calc:hover {
+  background-color: orange;
+}
+
+.display {
+  grid-area: dis;
+  text-align: right;
+  height: 30px;
+}
+
+.del {
+  grid-area: del;
+}
+
+.calc_container {
+  margin: 10vh 30vw;
+  display: grid;
+  grid-template-areas: "dis dis dis dis" "num7 num8 num9 div" "num4 num5 num6 mul" "num1 num2 num3 minus" "num0 del cal plus";
+  gap: 10px;
+  background-color: #3f5c3f;
+  border: solid 10px #3f5c3f;
+  text-align: center;
+}
+
+.calc_container > div {
+  border: solid 3px #14a4c1;
+  padding: 20px;
+  background-color: #8eb2e2;
+  font-size: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.num0:hover, .num1:hover, .num2:hover, .num3:hover, .num4:hover, .num5:hover, .num6:hover, .num7:hover, .num8:hover, .num9:hover, .calc:hover, .del:hover, .op_div:hover, .op_plus:hover, .op_mul:hover, .op_min:hover {
+  background-color: rgb(203, 159, 79);
+}
+
+@media (max-width: 480px) {
+  .calc_container {
+    width: 95%;
+    margin: 0;
+  }
+}
+.header {
+  background-color: rgb(154, 49, 234);
+  width: 100%;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.page_title {
+  flex: 11;
+  text-align: center;
+  padding: 15px;
+  padding-right: 7em;
+}
+
+.back_home {
+  flex: 1;
+  padding: 15px;
+}
+.back_home a {
+  text-decoration: none;
+  color: rgb(217, 217, 217);
+}
+.back_home :hover {
+  color: white;
+}

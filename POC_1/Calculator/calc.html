@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./calc.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="back_home">
+            <a href="../main.html">Back</a>
+        </div>
+        <div class="page_title">Calculator</div>
+
+    </div>
+
+    <div class="calc_container">
+        <!-- Make it using ul and li -->
+        <div class="num1" onclick="getkey(this)">1</div>
+        <div class="num2" onclick="getkey(this)">2</div>
+        <div class="num3" onclick="getkey(this)">3</div>
+        <div class="num4" onclick="getkey(this)">4</div>
+        <div class="num5" onclick="getkey(this)">5</div>
+        <div class="num6" onclick="getkey(this)">6</div>
+        <div class="num7" onclick="getkey(this)">7</div>
+        <div class="num8" onclick="getkey(this)">8</div>
+        <div class="num9" onclick="getkey(this)">9</div>
+        <div class="num0" onclick="getkey(this)">0</div>
+
+        <div class="op_plus" onclick="getOperator(this)">+</div>
+        <div class="op_min" onclick="getOperator(this)">-</div>
+        <div class="op_mul" onclick="getOperator(this)">*</div>
+        <div class="op_div" onclick="getOperator(this)">/</div>
+        <div class="calc" onclick="calculation(this)">=</div>
+        <div class="display"></div>
+        <div class="del" onclick="deleteCal()">AC</div>
+
+    </div>
+    <script src="./calc.js"></script>
+</body>
+
+</html>

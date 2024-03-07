@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="toDo.css">
+    <title>Add Your Goals</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="back_home">
+            <a href="../main.html">Back</a>
+        </div>
+        <div class="page_title">Learning Goals</div>
+
+    </div>
+    <div class="container">
+        <div class="inputTodoDiv">
+            <input type="text" required id="todo_input" onkeyup="getNewGoal(event)">
+            <button class="add_btn" onclick="addTodo()">Add Goal</button>
+        </div>
+        <div class="display_Todo">
+            <h1 class="goal_head">Your Learning Goals</h1>
+            <ul id="todoList">
+            </ul>
+        </div>
+    </div>
+    <script src="toDo.js"></script>
+</body>
+
+</html>

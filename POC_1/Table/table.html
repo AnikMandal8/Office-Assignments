@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="table.css" />
 </head>
 
-<body>
+<body onload="fetchData()">
     <div class="header">
         <div class="back_home">
             <a href="../main.html">Back</a>
@@ -15,8 +15,16 @@
         <div class="page_title">Contacts List</div>
 
     </div>
-    <div class="table_div">
+    <div id="table_div">
         <table id="table">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Website</th>
+            </tr>
+            <tr></tr>
+        </table>
+        <!-- <table id="table">
             <tr>
                 <th style="width: 30%;">NAME</th>
                 <th>MAIL</th>
@@ -108,7 +116,7 @@
                 <td>9085463021</td>
                 <td>India</td>
             </tr>
-        </table>
+        </table> -->
     </div>
     <script src="./table.js" ></script>
 </body>

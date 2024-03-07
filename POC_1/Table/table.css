@@ -1,82 +1,74 @@
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
-    background-color: rgb(154, 49, 234);
-    width: 100%;
-    display: flex;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
+  background-color: rgb(154, 49, 234);
+  width: 100%;
+  display: flex;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .page_title {
-    flex: 11;
-    text-align: center;
-    padding: 15px;
-    padding-right: 7em;
-
+  flex: 11;
+  text-align: center;
+  padding: 15px;
+  padding-right: 7em;
 }
 
 .back_home {
-    flex: 1;
-    padding: 15px;
-
-    a {
-        text-decoration: none;
-        color: rgb(217, 217, 217);
-        ;
-    }
-
-    :hover {
-        color: white;
-    }
+  flex: 1;
+  padding: 15px;
+}
+.back_home a {
+  text-decoration: none;
+  color: rgb(217, 217, 217);
+}
+.back_home :hover {
+  color: white;
 }
 
-.table_div {
-    margin: 1rem 7rem 0 7rem;
-    display: flex;
-    justify-content: center;
-    overflow-x: auto;
-
+#table_div {
+  margin: 1rem 7rem 0 7rem;
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
 }
 
 #table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: center;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
 }
 
 #table td,
 #table th {
-    /* border: 1px solid #ddd; */
-    padding: 8px;
-
+  /* border: 1px solid #ddd; */
+  padding: 8px;
 }
-#table th{
-    background-color: rgb(111, 213, 16);
+
+#table th {
+  background-color: rgb(111, 213, 16);
 }
 
 #table tr:nth-child(even) {
-    background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
 #table tr:hover {
-    background-color: rgb(168, 168, 168);
+  background-color: rgb(168, 168, 168);
 }
 
-
-
-@media screen and (max-width:480px) {
-    .page_title {
-        padding-right: 5em;
-    }
-
-    .table_div {
-        margin-left: 20px;
-        margin-right: 20px;
-        justify-content: flex-start;
-    }
+@media screen and (max-width: 480px) {
+  .page_title {
+    padding-right: 5em;
+  }
+  #table_div {
+    margin-left: 20px;
+    margin-right: 20px;
+    justify-content: flex-start;
+  }
 }
